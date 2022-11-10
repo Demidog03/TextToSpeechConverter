@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /**to avoid width or height changing were adding padding or border*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ADDDD0;
+}
+
+.wrapper{
+    width: 370px;
+    border-radius: 7px;
+    background: #fff;
+    padding: 25px 30px;
+}
+.wrapper header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.wrapper form{
+    margin: 35px 0 20px;
+}
+
+.wrapper form .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.wrapper .row label{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/*where used for several class selectors*/
+form :where(textarea, select, button){
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form .row textarea{
+    border: 1px solid #999;
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+form .row .outer{
+    height: 47px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+form .row select{
+    font-size: 14px;
+}
+
+form button{
+    height: 52px;
+    margin-top: 10px;
+    background: #87A2FB;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
